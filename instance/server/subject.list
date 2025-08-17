@@ -1,0 +1,31 @@
+{
+	"type":"MAC_LABEL",
+	"subtype":"SUBJECT"
+}
+{
+	"user_name":"zhang",
+	"user_id":1001,
+	"label":{
+		"sec_class":"RESEARCH",
+		"sec_label":0,	
+		"inte_label":1
+	}
+}
+{
+	"user_name":"wang",
+	"user_id":1002,
+	"label":{
+		"sec_class":"PRODUCE",
+		"sec_label":0,	
+		"inte_label":3
+	}
+}
+{
+	"user_name":"zhao",
+	"user_id":1004,
+	"label":{
+		"sec_class":"TEST",
+		"sec_label":0,	
+		"inte_label":2
+	}
+}

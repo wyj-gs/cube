@@ -1,0 +1,39 @@
+{
+	"policy_head":
+	{
+			"name":"login",
+       		"type":"DUP",
+        	"ljump":1,
+            "newname":"flag_login"
+	},
+	"MATCH_RULES":
+	[
+		{	"op":"AND","area":"HEAD","type":"USER_DEFINE"}
+	],
+	"ROUTE_RULES":
+	{
+		"main_policy":[
+			{"target_type":"CONN","target_name":"flag_client"}
+		]
+	}
+}
+{
+	"policy_head":
+	{
+			"name":"file_share",
+       		"type":"DUP",
+            "ljump":1,
+            "rjump":-1,
+        	"newname":"flag_notice"
+	},
+	"MATCH_RULES":
+	[
+		{	"op":"AND","area":"HEAD","type":"FILE_TRANS","subtype":"FILE_NOTICE"}
+	],
+	"ROUTE_RULES":
+	{
+		"main_policy":[
+			{"target_type":"CONN","target_name":"flag_client"}
+		],
+	}
+}

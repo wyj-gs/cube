@@ -1,0 +1,8 @@
+{
+	"name":"user_server",
+	"libname":"user_server"
+}
+{
+	"name":"file_dealer",
+	"libname":"file_dealer"
+}
